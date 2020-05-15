@@ -1,108 +1,225 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width:device-width, initial-scale=1.0">
-        <title> Lalin's Official Website</title>
-        <style>
-            body {
-                background-color:antiquewhite;
-                text-align:center;
-            }
-            table {
-                border: 2px solid black;
-                border-collapse:collapse;
-                text-align:center;
-                margin-left:auto;
-                margin-right:auto;
-            }
-            th, td {
-                border:2px solid black;
-                padding:5px;
-               
-            }
-            .selected{
-                background-color:red;
-            }
-            .selected:hover {
-                background-color:greenyellow;
-                color:black;
-            }
-            img {
-                width:400px;
-                height: auto;
-            }
-        </style>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Tutorial</title>
+    <style>
+                /* ================= LAYOUT SECTION =============== */
+        body {
+            background-color:#9c9f84;
+            margin:0px;
+            font-family:Verdana, Georgia, serif;
+            font-size:14px;
 
-    <body>
-        <h1>My Learning Schedule</h1>
-        <div>
-        <table>
-            <tr>
-                <th>Day/Time</th>
-                <th>Monday</th>
-                <th>Tuesday</th>
-                <th>Wednesday</th>
-                <th>Thursday</th>
-                <th>Friday</th>
-            </tr>
-            <tr>
-                <td><b>8:00 - 9:30</b></td>
-                <td class="selected">HTML</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td><b>12:00 - 1:30</b></td>
-                <td></td>
-                <td class="selected">HTML</td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td><b>5:30-7:00</b></td>
-                <td></td>
-                <td></td>
-                <td class="selected">CSS</td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td><b>7:30-10:00</b></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td class="selected">CSS</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td><b>9:15-10:45</b></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td class="selected">Javascript</td>
-            </tr>
+        }
+        #header {
+            background-color:#5c755e;
+            margin:10px;
+            height:90px;
+            border-radius:5px;
+        }
 
 
-        </table>
+        #navbar ul {
+            padding:5px;
+            list-style-type:none;
+            text-align:center;
+            background-color:#000;
+            margin:10px;
+            border-radius:5px;
+        }
+
+        #navbar ul li {
+            display:inline;
+        }
+
+        #navbar ul li a {
+        text-decoration:none;
+        font-family:Arial;
+        padding:.2em 1em;
+        color:#fff;
+        background-color:#000;
+        }
+
+        #navbar ul li a:hover {
+            color:#000;
+            background-color:#fff;
+        }
+        .main {
+            background-color:#e5e4d7;
+            margin-left:10px;
+            margin-right:320px;
+            margin-top:10px;
+            margin-bottom:10px;
+            border-radius:5px;
+            padding:20px;
+            font-size:110%;
+        }
+
+
+        .sideright {
+            background-color:#e5e4d7;
+            margin-left:10px;
+            margin-right:10px;
+            margin-top:0px;
+            margin-bottom:10px;
+            border-radius:5px;
+            padding:20px;
+            font-size:105%;
+            float:right;
+            width:260px;
+            clear:right;
+        }
+        .imagesidebar {
+            margin-left:10px;
+            margin-right:10px;
+            margin-top:0px;
+            margin-bottom:10px;
+            border-radius:5px;
+            float:right;
+            width:300px;
+            clear:right;
+            opacity:1.0;
+            transition:opacity 0.5s ease-in-out;
+        }
+        .imagesidebar:hover{
+            opacity:0.4;
+        }
+        #footer {
+            background-color:#5c755e;
+            margin:10px;
+            height:60px;
+            clear:both;
+            border-radius:5px;
+            color:#efe5d0;
+            text-align: center;
+            padding: 15px;
+            font-size: 90%;
+        }
+        #footer ul {
+            padding:5px;
+            list-style-type:none;
+            text-align:center;
+            margin:10px;
+            border-radius:5px;
+        }
+
+        #footer ul li {
+            display:inline;
+        }
+
+        #footer ul li a {
+        text-decoration:none;
+        font-family:Arial;
+        padding:.2em 1em;
+        color:#efe5d0;
+        background-color:#5c755e;
+        }
+
+        #footer ul li a:hover {
+            color:#000;
+            background-color:#fff;
+        }
+        /* ============ heading section ========= */
+        h1 {
+            font-size:120%;
+            color:#ce282e
+        }
+        h2 {
+            font-size:120%;
+            color:darkblue;
+        }
+        h3 {
+            font-size: 250%;
+            text-align:center;
+            color: #e5e4d7;
+            font-family:"Century Gothic", "Gill sans", Arial, sans-serif;
+            margin: 0px;
+
+            position: relative;
+            top: 50%;
+            transform:translateY(-50%);
+            -webkit-transform: translateY(-50%);
+            -moz-transform: translateY(-50%);
+
+        }
+
+        img {
+            max-width:100%;
+            max-height:100%;
+            display:block;
+            margin-left:auto;
+            margin-right:auto;
+
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <!-- <h3>learning.com</h3> -->
+        <img src="pic5.jpg" alt="">
+    </div>
+    <div id="navbar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Career</a></li>
+        </ul>
+    </div>
+    <div class="sideright">
+        <h2>Lecture Dates</h2>
+        <p>11/07 - Python Programming</p>
+        <p>11/14 - Django</p>
+        <p>11/21 - HTML, CSS</p>
+        <p>11/28  - JavaScript</p>
+        <p>12/07 - React</p>
+    </div>
+    <div class="sideright">
+        <h2>Lecture Dates 2</h2>
+        <p>11/07 - Python Programming</p>
+        <p>11/14 - Django</p>
+        <p>11/21 - HTML, CSS</p>
+        <p>11/28  - JavaScript</p>
+        <p>12/07 - React</p>
     </div>
     <div>
-        <h1>Flower</h1>
-        <img src="https://images.pexels.com/photos/60597/dahlia-red-blossom-bloom-60597.jpeg" alt="">
+        <img src="https://images.pexels.com/photos/60597/dahlia-red-blossom-bloom-60597.jpeg" alt="Not Available" class="imagesidebar">
     </div>
-    <!-- <script>
-        var result = confirm('Do you want to leave this page?');
-          if (result==true) {
-              alert('Thank you for visiting');
-          }
-          else {
-              alert('Thank you for staying with us.');
-          }
-      </script> -->
+    <div class="main">
+                <h1>Natural Beauties of Bangladesh</h1>
+            <p>
+                In summer, though we feel uncomfortable for extreme heat, yet we get various kinds of sweet fruits in this season. After a long spell of hot weather, the rainy season comes with showers to cool the earth. During the rainy season the sky often remains overcast with thick black clouds that hover across the sky close to the earth surface. The low-lying lands go under water and look like a vast sheet of water. In autumn there is a play of hide and seeks among the clouds. The sky in an autumn night studded with innumerable stars appears to be a dreamland to the lookers. In late autumn nature smiles with the dew drops in the morning. In the winter fields full of winter crops and golden paddy ready for reaping present a panoramic view. After winter comes the spring with all its beautiful sights and sounds and makes Bangladesh the queen of all beauties.
+            </p>
+            <h1>Deforestation</h1>
+            <p>Deforestation is the removal of trees on a vast scale for fulfilling all the requirements of the growing population. Humans being are so selfish; they are doing deforestation by completely removing the forests without replanting. However, they do not know that unknowingly they are digging a big pit for their own. People are changing the forests into the land forms for getting more wood, fuel, harvesting, making farms, building home and cities to live comfortably.</p>
+    </div>
+    <div class="main">
+        <h1>Environmental Pollution</h1>
+        <p>
+            Our earth is the only planet in the universe which has an environment suitable for life. Air and water is needed for survival. Earth provided these essentials and man used them. This usage over the period has led to serious pollution problems that can be hazardous.
+        </p>
+        <p>
+            Many industries have come up owing to rapid urbanization. Furthermore, there is an ever increasing demand of petrol and diesel for running various means of transport. As a result, a heavy amount of carbon monoxide, hydrocarbon, sulphur-dioxide and many more gases are polluting the air. The major threat to humanity comes from the development of nuclear sciences.
+        </p>
+        <h1>The Seasons of Bangladesh</h1>
+        <p>
+            Then the rainy season comes. Ashar and Shrabon are the months of the rainy season. During the rainy season the sky looks cloudy. Sometimes the sun is not seen. It rains heavily. Rivers, tanks, ponds and canals become full to the brim. It rains cats and dogs. Students cannot go to schools, and colleges. Roads become muddy and slippery. The rainy season is very useful for our country. Our agriculture depends on this rain. We get enough fishes in this season.
+        </p>
+        <p>
+            The summer is the first season in Bengali calendar. Boishakh and Jaistha make the summer season. During summer, the sun shines hotly. The heat is unbearable. Water goes dry. Pond, canals, lakes and small rivers go dry. Extreme heat makes everything lifeless. People cannot work easily. Summer is also called the season of fruits. Various kinds of fruits like Mangoes, Jackfruits and other fruits of Bangladesh ripen in this season.
+        </p>
+    </div>
+    <div id="footer">
+        <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Career</a></li>
+            <li><a href="#">Help</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        &copy; 2020 learning.com. All Rights Reserved.
+
+    </div>
 </body>
 </html>
