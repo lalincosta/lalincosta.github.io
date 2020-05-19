@@ -179,6 +179,23 @@
 
         }
     </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+
+    document.querySelector('#red').onclick = function(){
+       document.querySelector('#hello').style.color ='red';}
+
+   document.querySelector('#green').onclick = function(){
+       document.querySelector('#hello').style.color ='green';
+   }
+
+   document.querySelector('#blue').onclick = function(){
+       document.querySelector('#hello').style.color ='blue';
+   
+       
+    }
+});
+</script>
 </head>
 <body>
     <div id="header">
@@ -211,6 +228,12 @@
     </div>
     <div>
         <img src="https://images.pexels.com/photos/60597/dahlia-red-blossom-bloom-60597.jpeg" alt="Not Available" class="imagesidebar">
+    </div>
+    <div class="main">
+        <h1 id="hello">WELCOME TO MY WEBSITE</h1>
+        <button id="red">Red</button>
+        <button id="green">Green</button>  
+        <button id="blue">Blue</button>
     </div>
     <div class="main">
                 <h1>Natural Beauties of Bangladesh</h1>
